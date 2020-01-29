@@ -1,6 +1,18 @@
 {
     "name": "ab/devel-quality",
     "license": "MIT",
+    "homepage": "https://ab.hl9.net/projects/devel-quality",
+    "keywords": [
+        "develop", "analyze", "quickstart", "phploc", "phpstan", "psalm", "cs-checker", "cs-fixer", "phpcs", "ab"
+    ],
+    "type": "metapackage",
+    "readme": "README.md",
+    "support": {
+        "email": "devel-quality@ab.hl9.net",
+        "issues": "https://ab.hl9.net/projects/devel-quality/issues",
+        "docs": "https://ab.hl9.net/projects/devel-quality/docs",
+        "irc": "irc://chat.freenode.net/#ab-pkgs"
+    },
 
     "require": {
         "phploc/phploc": "^5.0",
@@ -37,8 +49,17 @@
         "phpmd/phpmd": "^2.7",
         "povils/phpmnd": "^2.1",
 
-        "webmozart/assert": "^1.5"
+        "webmozart/assert": "^1.5",
+
+        "pds/skeleton": "^1.0"
     },
+
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
 }
